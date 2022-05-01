@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+}
+.top {
+    position: relative;
+    top: -80vh;
+    left: -20vw;
+}
+.bottom {
+    position: relative;
+    top: -100vh;
+    right: -50vw;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    position: absolute;
+    top: 25vh;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 60vh;
+    margin: auto;
+    background-color: white;
+}
+header {
+    position: relative;
+}
+.head {
+    width: 7vmax;
+    height: 15vh;
+    overflow: hidden;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    right: 9vw;
+    top: 13vh;
+}
+.name {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name h1 {
+    font-size: 1.5em;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    margin-right: .5em;
+}
+.name p {
+    font-size: 1.2em;
+    padding-top: .9vh;
+    color: hsl(227, 10%, 46%);
+    font-weight: 700;
+}
+.contry {
+    text-align: center;
+    margin-top: 2vh;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+.line {
+    border-bottom: 1px solid hsl(0, 0%, 59%);
+    margin-top: 5vh;
+}
+.keterangan {
+    display: grid;
+    grid-template-areas: 
+        "angka angka2 angka3"
+        "kt kt2 kt3"
+    ;
+    margin-top: 2vh;
+    text-align: center;
+    gap: .3em;
+}
+.keterangan h1 {
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.keterangan p {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: .7em;
+}
+.keterangan .follow {
+    grid-area: angka;
+}
+.keterangan .like {
+    grid-area: angka2;
+}
+.keterangan .photo {
+    grid-area: angka3;
+}
+.keterangan .fol {
+    grid-area: kt;
+}
+.keterangan .likes {
+    grid-area: kt2;
+}
+.keterangan .photos {
+    grid-area: kt3;
+}
+
+@media screen and (max-width: 576px) {
+    .top {
+        top: -100vh;
+        left: -130vw;
+    }
+    .bottom {
+        top: -105vh;
+        right: -40vw;
+    }
+    .container {
+        width: 60vw;
+    }
+    header {
+        width: 60vw;
+    }
+    header .imgCard {
+        width: 60vw;
+    }
+    .head {
+        right: 20vw;
+        width: 20vw;
+    }
+    .name {
+        width: 60vw;
+        margin-top: 11vmax;
+    }
+    .name p {
+        margin-top: .1vh;
+    }
+    .line {
+        width: 60vw;
+    }
+    .keterangan{
+        width: 60vw;
+    }
+}
